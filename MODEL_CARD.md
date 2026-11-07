@@ -11,7 +11,6 @@
 | Base model | `stabilityai/stable-diffusion-xl-base-1.0` in the Colab launch, revision unpinned |
 | Training VAE | `madebyollin/sdxl-vae-fp16-fix` |
 | Export | SafeTensors with `format: pt` metadata and rank-12 U-Net attention adapters |
-| Weight redistribution terms | Unverified |
 
 ## Intended use
 
