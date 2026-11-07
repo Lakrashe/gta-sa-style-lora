@@ -1,10 +1,8 @@
 # Experiment record
 
-## Reported by the project author
+## What I tried
 
-- The project used LoRA to fine-tune a model obtained from Hugging Face.
-- The training images came from a small collection chosen for a GTA San Andreas-inspired look.
-- The author found the initial generated results unsatisfactory and recorded few details from the run.
+I used LoRA to fine-tune an SDXL model from Hugging Face on a small set of San Andreas images. I wasn’t happy with the first results, so I went back through my Colab notebook and checkpoint files to document what I ran.
 
 ## Colab training record
 
@@ -26,7 +24,7 @@ The original notebook uses the Diffusers `train_dreambooth_lora_sdxl.py` example
 
 An earlier launch at 1,024 pixels targeted 2,000 steps and stopped around step 29 (cell 29). The later launch logged adapter saves in `checkpoint-500` and `checkpoint-1000`, followed by a final export. Final validation then failed with a CUDA out-of-memory error. The error reports 14.56 GiB of total GPU memory. The precise GPU model is unknown.
 
-The numbered uploads are consistent with the two logged save milestones. The notebook has no hashes for those original save paths, so the file-to-step mapping is inferred. The notebook's later inference cell loaded the unnumbered final export. See the [saved inference outputs](../examples/README.md).
+I matched the numbered files to the two logged save milestones by filename. I don’t have hashes from the original save paths to verify that mapping. My later Colab inference cell loaded the unnumbered final export.
 
 ## Checkpoint findings
 

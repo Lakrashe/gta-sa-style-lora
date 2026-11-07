@@ -5,7 +5,7 @@
 | Field | Record |
 | --- | --- |
 | Name | GTA San Andreas Style LoRA |
-| Artifact | Image-generation LoRA adapter checkpoints, as described by the author |
+| Artifact | Image-generation LoRA adapter checkpoints |
 | Stage | Initial portfolio experiment |
 | Architecture | SDXL U-Net |
 | Base model | `stabilityai/stable-diffusion-xl-base-1.0` in the Colab launch, revision unpinned |
@@ -23,7 +23,7 @@ The supplied dataset contains 32 JPEGs whose filenames match the Colab listings.
 
 ## Evaluation and limitations
 
-The author's qualitative assessment was that the results were unsatisfactory. Final in-training validation ran out of GPU memory after the weights were saved. The notebook preserved two [standalone inference examples](examples/README.md) with different prompts. Relative checkpoint quality and reproducibility remain unverified.
+I wasn’t happy with how well the early outputs captured the style I was aiming for. Final validation ran out of GPU memory after the run saved the weights. I’ve included [two example outputs](examples/README.md). I haven’t measured how the checkpoints compare.
 
 ## Attribution and distribution
 

@@ -1,6 +1,6 @@
 # Training dataset
 
-The project author supplied the original training dataset as a ZIP. It contains 32 readable JPEGs under `gta_sa_dataset/`. All 32 filenames match the saved Colab directory listings, and the training log independently reports 32 examples. The Colab listings provide filenames only, so the archive and the files read during training could be matched by name.
+My training dataset ZIP contains 32 readable JPEGs under `gta_sa_dataset/`. All 32 filenames match my saved Colab directory listings, and the training log also reports 32 examples. The listings let me match the archive to the notebook by filename.
 
 | Filename pattern | Images |
 | --- | ---: |

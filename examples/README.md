@@ -1,14 +1,12 @@
-# Original Colab inference outputs
+# Example outputs
 
-These images were extracted from the notebook's saved JPEG outputs. The two cells used different prompts and pipeline settings, so the images cannot establish the effect of the LoRA.
+I generated these while testing the project. I can’t confirm that the two images used the same prompt or settings, so I treat them as separate examples.
 
-## Final adapter loaded
+## LoRA output
 
-[View the snowy village sample](adapter-snowy-village.jpg)
+[View my BMX sunset output](test_lora1.png)
 
-- Prompt `SA_STYLE, a snowy mountain village with wooden cabins`
-- SDXL Base 1.0 with the fp16-fix VAE and the unnumbered final adapter export
-- 30 inference steps, guidance scale 7.5, CUDA generator seed 42
+The prompt, seed, checkpoint, and inference settings for this image are unconfirmed.
 
 ## Base model only
 
