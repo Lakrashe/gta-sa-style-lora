@@ -6,7 +6,7 @@ I wanted to see if I could get Stable Diffusion XL to capture the look of GTA Sa
 
 I fine-tuned SDXL Base 1.0 in Google Colab using DreamBooth and a rank-12 LoRA on 32 images. The run reached 1,000 optimizer steps and saved the weights before final validation ran out of GPU memory. I wasn’t happy with how well the first outputs captured the San Andreas look. See the [training notes](docs/current-state.md) and [model card](MODEL_CARD.md).
 
-| Included checkpoint | Size | Exported tensors |
+| Checkpoint | Size | Exported tensors |
 | --- | ---: | ---: |
 | `pytorch_lora_weights_500.safetensors` | 69,840,896 bytes | 1,120 |
 | `pytorch_lora_weights_1000.safetensors` | 69,840,896 bytes | 1,120 |
@@ -21,7 +21,9 @@ This is one of my LoRA outputs. I don’t have the exact prompt, seed, or checkp
 
 ## Inspect the checkpoints
 
-From the repository root, run the following with Node.js. The script uses built-in modules and reads the two original files in [checkpoints/](checkpoints/README.md).
+Download either SDXL Base 1.0 LoRA adapter from [checkpoints/](checkpoints/). If you cloned the repository and still need the weights, run `git lfs pull`.
+
+To inspect both files, run this from the repository root with Node.js. You can also pass just one checkpoint path.
 
 ```sh
 node scripts/inspect-checkpoints.mjs checkpoints/pytorch_lora_weights_500.safetensors checkpoints/pytorch_lora_weights_1000.safetensors
@@ -33,13 +35,10 @@ The command prints JSON with metadata, tensor names, shapes, dtypes, offsets, an
 
 | Path | Contents |
 | --- | --- |
-| [`checkpoints/`](checkpoints/README.md) | Expected filenames and weight storage instructions |
+| [`checkpoints/`](checkpoints/README.md) | LoRA weights and checksums |
 | [`scripts/inspect-checkpoints.mjs`](scripts/inspect-checkpoints.mjs) | Dependency-free SafeTensors header reader |
 | [`docs/current-state.md`](docs/current-state.md) | Colab training configuration, outcomes, and checkpoint evidence |
 | [`docs/dataset.md`](docs/dataset.md) | Training image inventory, Colab filename match, and provenance |
 | [`examples/`](examples/README.md) | My featured LoRA output and a separate base-model sample |
 | [`MODEL_CARD.md`](MODEL_CARD.md) | Intended use, model details, and known limitations |
 
-## Weight storage
-
-The repository is configured for Git LFS. See the [checkpoint instructions](checkpoints/README.md) for staging weights after confirming redistribution terms.
