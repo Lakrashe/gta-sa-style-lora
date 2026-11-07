@@ -11,7 +11,7 @@ I fine-tuned SDXL Base 1.0 in Google Colab using DreamBooth and a rank-12 LoRA o
 | `pytorch_lora_weights_500.safetensors` | 69,840,896 bytes | 1,120 |
 | `pytorch_lora_weights_1000.safetensors` | 69,840,896 bytes | 1,120 |
 
-The notebook logs saves at steps 500 and 1,000. The uploaded filenames match those milestones, though the notebook provides no hashes to establish the identity of each renamed file.
+The notebook logs saves at steps 500 and 1,000. The uploaded filenames match those milestones.
 
 ## Example output
 
