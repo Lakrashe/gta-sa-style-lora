@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+.env
+.env.*
+node_modules/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+/data/
+/gta_sa_dataset/
+/gta_sa_dataset*.zip
+/runs/
+/outputs/
+*.ckpt
+*.pt
+*.pth
+*.bin
