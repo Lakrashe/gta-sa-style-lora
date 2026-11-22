@@ -20,10 +20,6 @@ Document an initial style-adaptation experiment and enable inspection of the two
 
 The supplied dataset contains 32 JPEGs whose filenames match the Colab listings. The run used DreamBooth LoRA at 768 pixels and reached 1,000 optimizer steps. Image sources, redistribution permissions, and preparation before Colab are undocumented. See the [dataset inventory](docs/dataset.md) and [training record](docs/current-state.md).
 
-## Evaluation and limitations
-
-I wasn’t happy with how well the early outputs captured the style I was aiming for. Final validation ran out of GPU memory after the run saved the weights. I’ve included [two example outputs](examples/README.md). I haven’t measured how the checkpoints compare.
-
 ## Attribution and distribution
 
 The project is a personal experiment inspired by Grand Theft Auto: San Andreas. Confirm base-model terms and the provenance and usage terms of the training images before redistributing the adapters or example images. No license has been assigned in this repository.
