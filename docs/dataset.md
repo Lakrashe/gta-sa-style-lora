@@ -20,4 +20,4 @@ My training dataset ZIP contains 32 readable JPEGs under `gta_sa_dataset/`. All 
 | 1920 × 1055 | 1 |
 | 1920 × 1080 | 11 |
 
-The training images are kept outside the repository. The SHA-256 of the supplied dataset ZIP is `6a35d3f14e8d84eed16869749b0ac0eb4ecfe4cb0bc8b5421d89e5b080f8a154`.
+The training images are kept outside the repository.
