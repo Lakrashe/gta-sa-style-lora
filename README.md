@@ -4,7 +4,7 @@ I wanted to see if I could get Stable Diffusion XL to capture the look of GTA Sa
 
 ## Project status
 
-I fine-tuned SDXL Base 1.0 in Google Colab using DreamBooth and a rank-12 LoRA on 32 images. The run reached 1,000 optimizer steps and saved the weights before final validation ran out of GPU memory. I wasn’t happy with how well the first outputs captured the San Andreas look. See the [training notes](docs/current-state.md) and [model card](MODEL_CARD.md).
+I fine-tuned SDXL Base 1.0 in Google Colab using DreamBooth and a rank-12 LoRA on 32 images. The run reached 1,000 optimizer steps and saved the weights before final validation ran out of GPU memory. See the [training notes](docs/current-state.md) and [model card](MODEL_CARD.md).
 
 | Checkpoint | Size | Exported tensors |
 | --- | ---: | ---: |
@@ -17,7 +17,7 @@ The notebook logs saves at steps 500 and 1,000. The uploaded filenames match tho
 
 ![BMX rider on a city street under a pink sunset](examples/test_lora1.png)
 
-This is one of my LoRA outputs. I don’t have the exact prompt, seed, or checkpoint recorded for this image. See the [example notes](examples/README.md).
+This is one of my LoRA outputs.
 
 ## Inspect the checkpoints
 
